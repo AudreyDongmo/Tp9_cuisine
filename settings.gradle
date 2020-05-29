@@ -1,0 +1,2 @@
+rootProject.name='Tp9_cuisine'
+include ':app'

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="0dp"
+    android:layout_marginTop="0dp"
+    tools:context=".MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/undraw_female_avatar_w3jk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text=" Linda Priscille"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar"
+
+        />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" +237 00 00 00 00"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/nom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <view
+        android:id="@+id/hr"
+        android:layout_width="30dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="190dp"
+        android:foreground="#6d64fa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contact"
+        />
+
+    <TextView
+        android:id="@+id/about_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="About Me "
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hr" />
+
+    <ImageView
+        android:id="@+id/personnal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/undraw_personal_information_962o"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_me"/>
+    <TextView
+        android:id="@+id/personnal_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Personnal Info"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:layout_marginLeft="18dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:alpha="0.68"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/about_me"
+        app:layout_constraintLeft_toRightOf="@id/personnal"
+        />
+    <TextView
+        android:id="@+id/personnal_info_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Personnal Information ..."
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="29dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/personnal_info"
+        app:layout_constraintLeft_toRightOf="@id/personnal"
+        />
+    <TextView
+        android:id="@+id/personnal_info_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" view more"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="95dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/personnal_info_menu"
+        app:layout_constraintLeft_toRightOf="@id/personnal"
+        />
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        app:layout_constraintLeft_toRightOf="@id/personnal_info_more"
+        app:layout_constraintTop_toBottomOf="@id/personnal_info_menu"/>
+
+    <view
+        android:id="@+id/hmore"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:foreground="#6d64fa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/more"
+        android:background="@drawable/rounder"
+
+        />
+
+    <ImageView
+        android:id="@+id/skill"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/undraw_dev_productivity_umsq"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hmore"/>
+    <TextView
+        android:id="@+id/skil_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Skills Info"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:alpha="0.68"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/hmore"
+        app:layout_constraintLeft_toRightOf="@id/skill"
+        />
+    <TextView
+        android:id="@+id/skill_info_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" I am able to ..."
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/skil_info"
+        app:layout_constraintLeft_toRightOf="@id/skill"
+        />
+
+    <TextView
+        android:id="@+id/skill_info_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text=" view more"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@id/skill"
+        app:layout_constraintTop_toBottomOf="@id/skill_info_menu" />
+
+    <ImageView
+        android:id="@+id/skillmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        app:layout_constraintLeft_toRightOf="@id/skill_info_more"
+        app:layout_constraintTop_toBottomOf="@id/skill_info_menu"/>
+
+    <view
+        android:id="@+id/smore"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:foreground="#6d64fa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/skillmore"
+
+        />
+
+    <ImageView
+        android:id="@+id/realis"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/undraw_done_checking_ty9a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smore"/>
+    <TextView
+        android:id="@+id/realis_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Realisations "
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:alpha="0.68"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/smore"
+        app:layout_constraintLeft_toRightOf="@id/realis"
+        />
+    <TextView
+        android:id="@+id/realis_info_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Since my  training in ..."
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/realis_info"
+        app:layout_constraintLeft_toRightOf="@id/realis"
+        />
+    <TextView
+        android:id="@+id/realis_info_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" view more"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="110dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/realis_info_menu"
+        app:layout_constraintLeft_toRightOf="@id/realis"
+        />
+    <ImageView
+        android:id="@+id/realismore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        app:layout_constraintLeft_toRightOf="@id/realis_info_more"
+        app:layout_constraintTop_toBottomOf="@id/realis_info_menu"/>
+
+    <view
+        android:id="@+id/rmore"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:foreground="#6d64fa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/realismore"
+        />
+
+    <ImageView
+        android:id="@+id/projet"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/undraw_opinion_dxp8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rmore"/>
+    <TextView
+        android:id="@+id/projet_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Mes Projets "
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:alpha="0.68"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/rmore"
+        app:layout_constraintLeft_toRightOf="@id/projet"
+        />
+    <TextView
+        android:id="@+id/projet_info_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My project for feature..."
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/projet_info"
+        app:layout_constraintLeft_toRightOf="@id/projet"
+        />
+    <TextView
+        android:id="@+id/projet_info_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" view more"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:textSize="15dp"
+        android:layout_marginLeft="110dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/projet_info_menu"
+        app:layout_constraintLeft_toRightOf="@id/projet"
+        />
+    <ImageView
+        android:id="@+id/projetmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        app:layout_constraintLeft_toRightOf="@id/projet_info_more"
+        app:layout_constraintTop_toBottomOf="@id/projet_info_menu"/>
+
+    <view
+        android:id="@+id/pmore"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:foreground="#6d64fa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/projetmore"
+        />
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

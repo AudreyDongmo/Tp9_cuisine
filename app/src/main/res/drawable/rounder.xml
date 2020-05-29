@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- On va definr le raduius pour afficher le texte dans un fond orange -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke android:width="0.5dp" />
+    <corners
+        android:radius="50dp" />
+</shape>
